@@ -1,0 +1,40 @@
+.navbar{
+    padding: 0;
+}
+
+#menu {
+    padding: 0%;
+
+        a {
+            color: white;
+            position: relative;
+            /* width: 14vw; */
+        }
+}
+
+.navbar-nav li:hover{
+    font-weight: 400;
+    font-size: large;
+    background: -webkit-linear-gradient(10deg, #d227a1 40%, rgba(0, 212, 255, 1) 100%);
+    -webkit-background-clip: text;
+    font-weight: bold;
+    transition: 0.3s all;
+}
+
+
+.nav-item {
+    margin: 5%;
+}
+
+.img-logo {
+    transform: translate(40px, 0px) rotate(180deg);
+    transition: 1.3s all;
+    &:hover{
+        transform: translate(40px, 0px);
+        transition: 0.5s all;
+    }
+}
+
+.navbar-collapse{
+    justify-content: center;
+}

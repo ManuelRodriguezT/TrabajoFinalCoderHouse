@@ -1,0 +1,127 @@
+@import './utilidades/colors';
+@import './utilidades/typo';
+@import './utilidades/reset';
+
+.about-us{
+    width: 100%;
+    padding: 78px 0;
+}
+
+.about-us img{
+    height: auto;
+    width: 420px;
+}
+
+.about-text{
+    width: 550px;
+    color: white;
+}
+
+.principal{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.gradient-about{ background: -webkit-linear-gradient(10deg, #d227a1 40%, rgba(0, 212, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    font-family: 'Pacifico', cursive;
+}
+
+.cursive-about{
+    font-family: 'Pacifico', cursive;
+}
+
+.about-text h1{
+    color: white;
+    font-family: 'Pacifico', cursive;
+
+}
+
+/* .about-text h5{
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    font-size: 18px;
+} */
+
+.about-text p{
+    color: white;
+    letter-spacing: 1px;
+    line-height:28px;
+    font-size: small;
+    margin-bottom: 45px;
+}
+
+.button-about{
+    color: white;
+    background: rgb(210, 39, 161);
+    background: linear-gradient(90deg, #d227a1 26%, rgba(51, 16, 97, 1) 100%);
+    box-shadow: 10px 15px 10px #331061;
+    border: #331061;
+    text-decoration: none;
+    /* border: 2px solid transparent; */
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 35px;
+    transition: .4s all;
+}
+
+.button-about:hover{
+    background: rgb(253, 187, 45);
+    background: linear-gradient(118deg, rgba(253, 187, 45, 1) 2%, rgba(210, 39, 157, 1) 60%, rgba(51, 16, 97, 1) 96%);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+@media (max-width:768px){
+    .principal {
+        flex-direction: column-reverse
+    }
+} 
+
+@media (max-width:1024px){
+    .principal {
+        flex-direction: column-reverse
+    }
+
+    .principal img{
+        margin-top: 10%;
+    }
+} 
+
+@media (max-width:425px){
+
+    .principal {
+        flex-direction: column-reverse;
+        padding: 50px;
+
+    }
+
+    .about-us{
+        width: 10vw;
+        align-items: center;
+    }
+
+    .about-text{
+        max-width: 70vw;
+        justify-content: center;
+        margin-left: 200px;
+        margin-top: -50px;
+        
+    }
+
+    .principal img{
+        width: 250px;
+        margin-left: 10px;
+        margin-top: 120px;
+        margin-left: 150px;
+    }
+}

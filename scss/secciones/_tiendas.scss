@@ -1,0 +1,116 @@
+@import './utilidades/colors';
+@import './utilidades/typo';
+@import './utilidades/reset';
+
+//-----------------Secciones-----------------------//
+
+@import './secciones/header';
+@import './secciones/_footer';
+
+.body-tienda{
+    width: 100%;
+    height: 100vh;
+}
+
+.container-us{
+    display: flex;
+    height: 88%;
+    align-items: center;
+    margin-left: 5%;
+
+}
+
+.col-container-us{
+    flex-basis: 50%;
+}
+
+.col-container-us h1{
+    color: white;
+    font-size: 30px;
+}
+
+.col-container-us h3{
+    color: white;
+    font-size: medium;
+    line-height: 15px;
+}
+
+.gradient-text-tienda {
+    background: -webkit-linear-gradient(10deg, #d227a1 40%, rgba(0, 212, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.col-container-us button{
+    width: 180px;
+    color: white;
+    font-size: 14px;
+    padding: 12px 0;
+    background: rgb(210, 39, 161);
+    background: linear-gradient(90deg, #d227a1 26%, rgba(51, 16, 97, 1) 100%);
+    border: #331061;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+.col-container-us button:hover {
+    background: rgb(253, 187, 45);
+    background: linear-gradient(118deg, rgba(253, 187, 45, 1) 2%, rgba(210, 39, 157, 1) 60%, rgba(51, 16, 97, 1) 96%);
+    transform: scale(1.1);
+    box-shadow: 5px 7.5px 5px #331061;
+    transition: 0.5s all;
+}
+
+.card-tienda{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(https://www.nyc.gov/assets/sbs/images/content/neighborhoods/grandst-storefront.png);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+
+}
+
+.card-tienda-1{
+    background-image: url(https://cdn.shopify.com/s/files/1/2316/3287/products/SF_WEB_SET_GALLERY_14_1500x.jpg?v=1639773900);
+}
+.card-tienda-2{
+    background-image: url(https://cdn.shopify.com/s/files/1/2316/3287/products/SF_WEB_SET_GALLERY_13_1500x.jpg?v=1639773899)
+}
+.card-tienda-3{
+    background-image: url(https://images.unsplash.com/photo-1580554430120-94cfcb3adf25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c3RvcmVmcm9udHxlbnwwfHwwfHw%3D&w=1000&q=80)
+}
+.card-tienda-4{
+    background-image: url(https://cdn.shopify.com/s/files/1/2316/3287/products/SF_WEB_SET_GALLERY_26_1500x.jpg?v=1639773902);
+}
+
+.card-tienda:hover{
+    transform: translateY(-10px);
+}
+
+.card-tienda h5{
+    color: white;
+    background: none;
+    text-shadow: 0 0 5px #fff;
+}
+
+.card-tienda p{
+    color: white;
+    background: none;
+}
+
+@media (max-width: 768px){
+    .container-us{
+        flex-direction: column;
+        align-items: center;
+    }
+}

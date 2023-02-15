@@ -1,0 +1,23 @@
+#footer {
+    background-color: #331061;
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.container-fluid li {
+    list-style: none;
+}
+
+.img-logo-footer:hover{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+.row {
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0%;
+}
