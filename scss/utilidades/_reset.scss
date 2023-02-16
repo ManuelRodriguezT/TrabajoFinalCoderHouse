@@ -3,6 +3,10 @@
     margin: 0;
     font-family: $typo-principal;
     background-color: $color-fondo;
-    box-sizing: border-box;
+    // box-sizing: border-box;
     color: white;
+
+    body{
+        background-color: $color-fondo;
+    }
 }
