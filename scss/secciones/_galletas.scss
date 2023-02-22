@@ -58,14 +58,14 @@
     font-family: 'Quicksand', sans-serif;
     background-color: #e3dfd2;
 
-&:hover {
-    transform: scale(1.05);
-    transition: 0.5s;
-    box-shadow: 5px 5px 9px -1px rgba(0, 0, 0, 0.35);
-    -webkit-box-shadow: 5px 5px 9px -1px rgba(0, 0, 0, 0.35);
-    -moz-box-shadow: 5px 5px 9px -1px rgba(0, 0, 0, 0.35);
+    &:hover {
+        transform: scale(1.05);
+        transition: 0.5s;
+        box-shadow: 5px 5px 9px -1px rgba(0, 0, 0, 0.35);
+        -webkit-box-shadow: 5px 5px 9px -1px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 5px 5px 9px -1px rgba(0, 0, 0, 0.35);
 
-}
+    }
 }
 
 .cookie-product {
