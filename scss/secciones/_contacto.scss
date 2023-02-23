@@ -7,7 +7,7 @@
 @import './secciones/header';
 @import './secciones/_footer';
 
-body{
+body {
     background-color: $color-fondo;
 }
 
@@ -70,7 +70,8 @@ body{
     p {
         opacity: .7;
         background-color: white;
-        color: $text-color-contact;;
+        color: $text-color-contact;
+        ;
     }
 
 }
@@ -99,7 +100,7 @@ body{
 .form-item {
     background-color: white;
 
-    label{
+    label {
         color: $text-color-contact;
     }
 }
