@@ -119,6 +119,36 @@ ul a {
     transform: scale(1.2);
     transition: 1s all; }
 
+.marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  margin-bottom: 30px; }
+  .marquee li {
+    font-size: 15px;
+    background-color: #d227a1; }
+
+.marquee-content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100vw;
+  background-color: #d227a1;
+  animation: scroll 10s linear infinite;
+  height: 40px;
+  align-items: center;
+  list-style: none; }
+
+.marquee-item {
+  flex-shrink: 0;
+  background-color: #d227a1; }
+
+@keyframes scroll {
+  from {
+    transform: translateX(0); }
+  to {
+    transform: translateX(-100%); } }
+
 /* ------------------------Seccion 1---------------------------- */
 .texto-1 {
   font-weight: bold;
@@ -127,6 +157,23 @@ ul a {
 .grid-main-container {
   display: flex;
   flex-wrap: wrap; }
+
+.seccion-1-texto {
+  margin: auto;
+  width: 80vw; }
+  .seccion-1-texto h1 {
+    text-align: center; }
+  .seccion-1-texto h2 {
+    text-align: center;
+    font-size: 20px; }
+
+.seccion-1-texto-cursive {
+  font-family: "Pacifico", cursive; }
+
+.cute-cookie {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 /*----------------------------Seccion 2---------------------------------- */
 .texto-2 {
@@ -174,12 +221,13 @@ ul a {
   font-family: 'Pacifico', cursive;
   background: #d227a1;
   background: linear-gradient(90deg, #d227a1 26%, #331061 100%);
-  box-shadow: 10px 15px 10px #331061;
+  margin: 20px 20px;
   border: #331061;
-  margin: 20px 20px; }
+  box-shadow: 10px 15px 10px #331061; }
   .button-1 button:hover {
     background: #fdbb2d;
     background: linear-gradient(118deg, #fdbb2d 2%, #d2279d 60%, #331061 96%);
+    box-shadow: 10px 15px 10px #331061;
     transform: scale(1.2);
     transition: 1s all; }
 
@@ -194,6 +242,8 @@ ul a {
     height: 40px; } }
 
 @media (max-width: 768px) {
+  .img-banner-principal img {
+    width: 350px; }
   .navbar > .container-fluid {
     display: flex;
     align-items: center;
@@ -222,7 +272,43 @@ ul a {
     margin: 0%;
     padding: 0%; }
   .gradient-text {
-    margin: 3vw; } }
+    margin: 3vw; }
+  .marquee {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    margin-bottom: 30px; }
+    .marquee li {
+      font-size: 15px;
+      background-color: #6624BA; }
+  .marquee-content {
+    flex-shrink: 0;
+    display: flex;
+    min-width: 100vw;
+    background-color: #6624BA;
+    animation: scroll 10s linear infinite;
+    height: 40px;
+    align-items: center;
+    list-style: none; }
+  .marquee-item {
+    background-color: #6624BA; }
+  .cookie-truck {
+    margin-bottom: 30px; }
+    .cookie-truck img {
+      width: 150px; }
+  .cute-cookie {
+    width: 250px; }
+  .seccion-1-texto h2 {
+    font-size: 17px; }
+  .seccion-2-flex {
+    margin-bottom: 30px; }
+  .cookie-con-lentes {
+    width: 15vw; }
+  .img-seccion-3 {
+    width: 60vw; }
+  .footer {
+    padding: 0;
+    margin-bottom: 0; } }
 
 @media (max-width: 425px) {
   .banner-principal-flex {
@@ -244,12 +330,28 @@ ul a {
   .img-seccion-3 {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 5%; }
+    justify-content: center; }
   .footer {
     font-size: small;
     text-align: center; }
-  .footer img {
-    width: 200px; } }
+    .footer img {
+      width: 200px; }
+    .footer ul {
+      margin: 0;
+      padding: 0; }
+  .banner-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; }
+  .seccion-1-texto h1 {
+    font-size: 22px; }
+  .seccion-1-texto h2 {
+    font-size: 14px; }
+  #banner-home img {
+    width: 230px; } }
 
 @media (max-width: 320px) {
   .texto-1 {
@@ -288,8 +390,7 @@ ul a {
   .animate__animate__wobble {
     width: 1px; }
   .cookie-con-lentes {
-    width: 120px;
-    margin-left: -13px; } }
+    width: 120px; } }
 
 * {
   padding: 0;
@@ -432,6 +533,12 @@ ul a {
   .container-us {
     flex-direction: column;
     align-items: center; } }
+
+@media (max-width: 425px) {
+  .card-tienda {
+    margin-left: 20vw; }
+  .button-tiendas {
+    margin-left: 21vw; } }
 
 * {
   padding: 0;
@@ -871,4 +978,6 @@ ul a {
 
 @media (max-width: 425px) {
   .wrapper-grid-galletas {
-    margin-bottom: 350px; } }
+    margin-bottom: 350px; }
+  .texto-cookie-flex {
+    margin: auto; } }
