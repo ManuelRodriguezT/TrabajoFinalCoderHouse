@@ -30,6 +30,15 @@
     h3 {
         font-size: larger;
     }
+
+    h1{
+        background: -webkit-linear-gradient(10deg, #f033ba 40%, rgba(0, 212, 255, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+    }
 }
 
 

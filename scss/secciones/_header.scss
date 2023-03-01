@@ -29,6 +29,7 @@
 .img-logo {
     transform: translate(40px, 0px) rotate(180deg);
     transition: 1.3s all;
+    background-color: transparent;
     &:hover{
         transform: translate(40px, 0px);
         transition: 0.5s all;

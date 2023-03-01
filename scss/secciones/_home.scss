@@ -39,7 +39,8 @@
     background: -webkit-linear-gradient(10deg, #d227a1 40%, rgba(0, 212, 255, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: 40px;
 }
 
 .img-banner-principal img {
@@ -265,7 +266,7 @@
     }
 
     #banner-home img {
-        width: 430px;
+        width: 380px;
     }
 
     .img-seccion-1 img {
@@ -364,13 +365,6 @@
         margin-bottom: 30px;
     }
 
-    .cookie-con-lentes{
-       width: 15vw;
-    }
-
-    .img-seccion-3{
-        width: 60vw;
-    }
 
     .footer{
         padding: 0;
@@ -383,10 +377,10 @@
 
 @media (max-width:425px) {
 
-    .banner-principal-flex {
-        display: flex;
-        flex-wrap: wrap;
+    .img-banner-principal img {
+        width: 55vw;
     }
+
 
     #banner-home img {
         width: 300px;
@@ -458,7 +452,15 @@
 }
 
 
-@media (max-width:320px) {
+@media (max-width:375px) {
+
+    .img-banner-principal{
+        width: 200px;
+    }
+    
+    .seccion-1-texto h1{
+        line-height: 35px;
+    }
 
     .texto-1 {
         width: 100%;
@@ -477,9 +479,6 @@
         width: 70vw;
     }
 
-    .footer {
-        margin: -10%;
-    }
 }
 
 @media (max-width:268px) {
@@ -510,9 +509,7 @@
         margin-left: -55px;
     }
 
-    .footer {
-        margin: -25%;
-    }
+  
 
     .animate__animate__wobble {
         width: 1px;
