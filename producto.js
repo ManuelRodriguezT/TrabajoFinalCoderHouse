@@ -1,24 +1,9 @@
-class producto {
-    nombre;
-    marca;
-    talla;
-    color;
-    cantidad;
-    precio;
-    id;
+let allContainerCart = document.querySelector('.products');
+let containerBuyCart = document.querySelector(".seccion-galletas-grid");
+let priceTotal = document.querySelector(".price-total");
+let amountProduct = document.querySelector(".count-product");
 
-constructor (id,nombre, precio, cantidad, marca, talla, color){
-    this.id = id
-    this.nombre = nombre
-    this.marca = marca
-    this.talle = this.talle
-    this.color = color
-    this.cantidad = cantidad
-    this.precio = precio
 
-}
-
-subtotal = () => {
-    return this.precio*this.cantidad;
-}
-}
+let buyThings = [];
+let totalCard = 0;
+let countProduct = 0;
